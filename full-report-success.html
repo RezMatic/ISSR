@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Access Request Received | ISSR-2030</title>
+
+  <meta
+    name="description"
+    content="Your request for access to the Infinity Skill Surge Report 2030 Full Report has been received."
+  >
+
+  <style>
+    :root {
+      --black: #0b0b0b;
+      --white: #ffffff;
+      --off-white: #f6f6f4;
+      --grey: #777777;
+      --line: #dddddd;
+      --red: #b40000;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--off-white);
+      color: var(--black);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* HEADER */
+
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--line);
+      padding: 18px 6%;
+    }
+
+    .header-inner {
+      max-width: 1180px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .brand-group img {
+      max-height: 48px;
+      width: auto;
+      display: block;
+    }
+
+    .brand-divider {
+      width: 1px;
+      height: 38px;
+      background: var(--line);
+    }
+
+    .back-link {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .back-link:hover {
+      color: var(--red);
+    }
+
+    /* MAIN */
+
+    main {
+      flex: 1;
+    }
+
+    .hero {
+      background: var(--black);
+      color: var(--white);
+      padding: 85px 6%;
+    }
+
+    .hero-inner {
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: var(--white);
+      background: var(--red);
+      padding: 7px 14px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 {
+      font-size: clamp(36px, 5.5vw, 62px);
+      line-height: 1.08;
+      margin-bottom: 22px;
+      letter-spacing: -0.03em;
+    }
+
+    .hero h1 span {
+      display: block;
+      color: #dddddd;
+      font-size: 0.43em;
+      line-height: 1.35;
+      letter-spacing: 0;
+      margin-top: 18px;
+      font-weight: 400;
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: auto;
+      color: #d0d0d0;
+      font-size: 18px;
+    }
+
+    /* CONFIRMATION */
+
+    .confirmation-section {
+      padding: 75px 6%;
+    }
+
+    .confirmation-card {
+      max-width: 850px;
+      margin: auto;
+      background: var(--white);
+      border: 1px solid var(--line);
+      padding: 55px;
+      text-align: center;
+    }
+
+    .success-icon {
+      width: 68px;
+      height: 68px;
+      margin: 0 auto 28px;
+      border-radius: 50%;
+      background: var(--red);
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    .confirmation-card h2 {
+      font-size: 31px;
+      margin-bottom: 18px;
+    }
+
+    .confirmation-card > p {
+      max-width: 650px;
+      margin: 0 auto 42px;
+      color: #555555;
+      font-size: 17px;
+    }
+
+    /* PROCESS */
+
+    .process {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin: 40px 0;
+      text-align: left;
+    }
+
+    .process-item {
+      background: #f1f1ef;
+      padding: 27px 22px;
+      border-top: 4px solid var(--black);
+    }
+
+    .process-number {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--red);
+      letter-spacing: 0.12em;
+      margin-bottom: 10px;
+    }
+
+    .process-item h3 {
+      font-size: 17px;
+      margin-bottom: 9px;
+    }
+
+    .process-item p {
+      font-size: 13px;
+      color: var(--grey);
+    }
+
+    /* NOTICE */
+
+    .notice {
+      background: #f8eaea;
+      border-left: 4px solid var(--red);
+      padding: 24px;
+      margin: 35px auto;
+      text-align: left;
+      max-width: 700px;
+    }
+
+    .notice strong {
+      display: block;
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      margin-bottom: 7px;
+      text-transform: uppercase;
+    }
+
+    .notice p {
+      color: #555555;
+      font-size: 14px;
+    }
+
+    /* BUTTON */
+
+    .actions {
+      display: flex;
+      justify-content: center;
+      margin-top: 38px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 25px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      border: 1px solid transparent;
+      transition: all 0.2s ease;
+    }
+
+    .btn-primary {
+      background: var(--black);
+      color: var(--white);
+    }
+
+    .btn-primary:hover {
+      background: var(--white);
+      color: var(--black);
+      border-color: var(--black);
+    }
+
+    /* PUBLICATION */
+
+    .publication-info {
+      max-width: 850px;
+      margin: 0 auto 75px;
+      padding: 35px;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      text-align: center;
+    }
+
+    .publication-info .label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      color: var(--red);
+      margin-bottom: 12px;
+    }
+
+    .publication-info h3 {
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+
+    .publication-info p {
+      color: var(--grey);
+      font-size: 14px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: var(--black);
+      color: #aaaaaa;
+      padding: 35px 6%;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    footer strong {
+      color: var(--white);
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 760px) {
+
+      header {
+        padding: 15px 5%;
+      }
+
+      .header-inner {
+        align-items: flex-start;
+      }
+
+      .brand-group {
+        gap: 12px;
+      }
+
+      .brand-group img {
+        max-height: 34px;
+        max-width: 130px;
+      }
+
+      .brand-divider {
+        height: 28px;
+      }
+
+      .back-link {
+        font-size: 10px;
+        text-align: right;
+      }
+
+      .hero {
+        padding: 65px 5%;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .confirmation-section {
+        padding: 45px 5%;
+      }
+
+      .confirmation-card {
+        padding: 35px 20px;
+      }
+
+      .confirmation-card h2 {
+        font-size: 26px;
+      }
+
+      .process {
+        grid-template-columns: 1fr;
+      }
+
+      .publication-info {
+        margin-bottom: 45px;
+        padding: 28px 18px;
+      }
+
+      .btn {
+        width: 100%;
+        max-width: 330px;
+        text-align: center;
+      }
+    }
+
+    @media print {
+      header,
+      footer,
+      .actions {
+        display: none;
+      }
+
+      .hero {
+        color: #000;
+        background: #fff;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="page">
+
+  <!-- HEADER -->
+
+  <header>
+    <div class="header-inner">
+
+      <div class="brand-group">
+
+        <img
+          src="assets/RRI-Logo.png"
+          alt="Roushan Research International"
+        >
+
+        <div class="brand-divider"></div>
+
+        <img
+          src="assets/Infinity-SkillWorks-Logo.png"
+          alt="Infinity SkillWorks"
+        >
+
+      </div>
+
+      <a
+        href="index.html"
+        class="back-link"
+      >
+        ← Back to Report
+      </a>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+      <div class="hero-inner">
+
+        <div class="eyebrow">
+          ACCESS REQUEST RECEIVED
+        </div>
+
+        <h1>
+          Thank You
+          <span>
+            Your request for access to the ISSR-2030 Full Report has been received.
+          </span>
+        </h1>
+
+        <p>
+          Your request has been recorded and will now proceed through
+          the report access consideration process.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONFIRMATION -->
+
+    <section class="confirmation-section">
+
+      <div class="confirmation-card">
+
+        <div class="success-icon">
+          ✓
+        </div>
+
+        <h2>
+          Your Request Has Been Received
+        </h2>
+
+        <p>
+          Thank you for your interest in the
+          <strong>Infinity Skill Surge Report 2030</strong>.
+          The information you submitted has been successfully recorded.
+          Access to the Full Report is subject to review and consideration.
+        </p>
+
+
+        <!-- PROCESS -->
+
+        <div class="process">
+
+          <div class="process-item">
+
+            <div class="process-number">
+              01
+            </div>
+
+            <h3>
+              Request Received
+            </h3>
+
+            <p>
+              Your professional and organisational information
+              has been recorded.
+            </p>
+
+          </div>
+
+
+          <div class="process-item">
+
+            <div class="process-number">
+              02
+            </div>
+
+            <h3>
+              Request Review
+            </h3>
+
+            <p>
+              The request will be considered based on the
+              information submitted and intended use.
+            </p>
+
+          </div>
+
+
+          <div class="process-item">
+
+            <div class="process-number">
+              03
+            </div>
+
+            <h3>
+              Access Consideration
+            </h3>
+
+            <p>
+              If access is approved, further instructions
+              will be communicated separately.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- NOTICE -->
+
+        <div class="notice">
+
+          <strong>
+            Important
+          </strong>
+
+          <p>
+            Submission of an access request does not automatically
+            grant access to the Full Report. Priority consideration
+            is given to authorised representatives of institutes and
+            employers using a professional or institutional email address.
+          </p>
+
+        </div>
+
+
+        <div class="actions">
+
+          <a
+            href="index.html"
+            class="btn btn-primary"
+          >
+            BACK TO ISSR-2030
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PUBLICATION INFORMATION -->
+
+    <section class="publication-info">
+
+      <div class="label">
+        OFFICIAL RESEARCH PUBLICATION
+      </div>
+
+      <h3>
+        Infinity Skill Surge Report 2030
+      </h3>
+
+      <p>
+        Unlocking the Human Edge in an AI-Accelerated World
+        · Published by Roushan Research International (RRI)
+      </p>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <p>
+      © 2030 <strong>Roushan Research International</strong>.
+      All rights reserved.
+    </p>
+
+    <p>
+      Infinity SkillWorks · ISSR-2030
+    </p>
+
+  </footer>
+
+</div>
+
+</body>
+</html>

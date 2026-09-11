@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Executive Summary | ISSR-2030</title>
+
+  <meta
+    name="description"
+    content="Access the Executive Summary of the Infinity Skill Surge Report 2030."
+  >
+
+  <style>
+    :root {
+      --black: #0b0b0b;
+      --black-soft: #151515;
+      --white: #ffffff;
+      --off-white: #f6f6f4;
+      --grey: #777777;
+      --line: #dddddd;
+      --red: #b40000;
+      --red-dark: #8d0000;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--off-white);
+      color: var(--black);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* HEADER */
+
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--line);
+      padding: 18px 6%;
+    }
+
+    .header-inner {
+      max-width: 1180px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .brand-group img {
+      max-height: 48px;
+      width: auto;
+      display: block;
+    }
+
+    .brand-divider {
+      width: 1px;
+      height: 38px;
+      background: var(--line);
+    }
+
+    .back-link {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--black);
+    }
+
+    .back-link:hover {
+      color: var(--red);
+    }
+
+    /* MAIN */
+
+    main {
+      flex: 1;
+    }
+
+    .hero {
+      background: var(--black);
+      color: var(--white);
+      padding: 85px 6%;
+    }
+
+    .hero-inner {
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: #ffffff;
+      background: var(--red);
+      padding: 7px 14px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 6vw, 68px);
+      line-height: 1.05;
+      margin-bottom: 22px;
+      letter-spacing: -0.03em;
+    }
+
+    .hero h1 span {
+      display: block;
+      color: #dddddd;
+      font-size: 0.42em;
+      line-height: 1.3;
+      letter-spacing: 0;
+      margin-top: 18px;
+      font-weight: 400;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      color: #d0d0d0;
+      font-size: 18px;
+    }
+
+    /* CONFIRMATION */
+
+    .confirmation-section {
+      padding: 75px 6%;
+    }
+
+    .confirmation-card {
+      max-width: 820px;
+      margin: auto;
+      background: var(--white);
+      border: 1px solid var(--line);
+      padding: 55px;
+      text-align: center;
+    }
+
+    .success-icon {
+      width: 68px;
+      height: 68px;
+      margin: 0 auto 28px;
+      border-radius: 50%;
+      background: var(--red);
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    .confirmation-card h2 {
+      font-size: 32px;
+      margin-bottom: 18px;
+    }
+
+    .confirmation-card > p {
+      max-width: 620px;
+      margin: 0 auto 35px;
+      color: #555555;
+      font-size: 17px;
+    }
+
+    .download-box {
+      background: #f1f1ef;
+      border-left: 4px solid var(--red);
+      padding: 28px;
+      margin: 35px auto;
+      max-width: 650px;
+    }
+
+    .download-box h3 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .download-box p {
+      color: var(--grey);
+      font-size: 14px;
+      margin-bottom: 22px;
+    }
+
+    /* BUTTONS */
+
+    .actions {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 24px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      border: 1px solid transparent;
+      transition: all 0.2s ease;
+    }
+
+    .btn-primary {
+      background: var(--red);
+      color: var(--white);
+    }
+
+    .btn-primary:hover {
+      background: var(--black);
+    }
+
+    .btn-secondary {
+      background: var(--black);
+      color: var(--white);
+    }
+
+    .btn-secondary:hover {
+      background: var(--white);
+      color: var(--black);
+      border-color: var(--black);
+    }
+
+    /* PUBLICATION INFO */
+
+    .publication-info {
+      max-width: 820px;
+      margin: 0 auto 75px;
+      padding: 35px;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      text-align: center;
+    }
+
+    .publication-info .label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      color: var(--red);
+      margin-bottom: 12px;
+    }
+
+    .publication-info h3 {
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+
+    .publication-info p {
+      color: var(--grey);
+      font-size: 14px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: var(--black);
+      color: #aaaaaa;
+      padding: 35px 6%;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    footer strong {
+      color: var(--white);
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 700px) {
+
+      header {
+        padding: 15px 5%;
+      }
+
+      .header-inner {
+        align-items: flex-start;
+      }
+
+      .brand-group {
+        gap: 12px;
+      }
+
+      .brand-group img {
+        max-height: 34px;
+        max-width: 130px;
+      }
+
+      .brand-divider {
+        height: 28px;
+      }
+
+      .back-link {
+        font-size: 10px;
+        text-align: right;
+      }
+
+      .hero {
+        padding: 65px 5%;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .confirmation-section {
+        padding: 45px 5%;
+      }
+
+      .confirmation-card {
+        padding: 35px 22px;
+      }
+
+      .confirmation-card h2 {
+        font-size: 26px;
+      }
+
+      .download-box {
+        padding: 24px 18px;
+      }
+
+      .publication-info {
+        margin-bottom: 45px;
+        padding: 28px 18px;
+      }
+
+      .btn {
+        width: 100%;
+        max-width: 330px;
+      }
+    }
+
+    @media print {
+      header,
+      footer,
+      .actions {
+        display: none;
+      }
+
+      .hero {
+        color: #000;
+        background: #fff;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="page">
+
+  <!-- HEADER -->
+
+  <header>
+    <div class="header-inner">
+
+      <div class="brand-group">
+
+        <img
+          src="assets/RRI-Logo.png"
+          alt="Roushan Research International"
+        >
+
+        <div class="brand-divider"></div>
+
+        <img
+          src="assets/Infinity-SkillWorks-Logo.png"
+          alt="Infinity SkillWorks"
+        >
+
+      </div>
+
+      <a
+        href="index.html"
+        class="back-link"
+      >
+        ← Back to Report
+      </a>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+      <div class="hero-inner">
+
+        <div class="eyebrow">
+          REQUEST RECEIVED
+        </div>
+
+        <h1>
+          Thank You
+          <span>
+            Your Executive Summary request has been successfully received.
+          </span>
+        </h1>
+
+        <p>
+          You can now access the Executive Summary of the
+          Infinity Skill Surge Report 2030.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONFIRMATION -->
+
+    <section class="confirmation-section">
+
+      <div class="confirmation-card">
+
+        <div class="success-icon">
+          ✓
+        </div>
+
+        <h2>
+          Executive Summary Ready
+        </h2>
+
+        <p>
+          Thank you for your interest in the
+          <strong>Infinity Skill Surge Report 2030</strong>.
+          Your request has been successfully received.
+        </p>
+
+
+        <div class="download-box">
+
+          <h3>
+            Infinity Skill Surge Report 2030
+          </h3>
+
+          <p>
+            Executive Summary · Unlocking the Human Edge
+            in an AI-Accelerated World
+          </p>
+
+          <!-- TEMPORARY PDF LINK -->
+          <!-- Replace "#" with the final PDF path when available -->
+
+          <a
+            href="publications/ISSR-2030-Executive-Summary.pdf"
+            class="btn btn-primary"
+            target="_blank"
+            rel="noopener"
+          >
+            DOWNLOAD EXECUTIVE SUMMARY
+          </a>
+
+        </div>
+
+
+        <div class="actions">
+
+          <a
+            href="index.html"
+            class="btn btn-secondary"
+          >
+            BACK TO ISSR-2030
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PUBLICATION INFORMATION -->
+
+    <section class="publication-info">
+
+      <div class="label">
+        OFFICIAL RESEARCH PUBLICATION
+      </div>
+
+      <h3>
+        Infinity Skill Surge Report 2030
+      </h3>
+
+      <p>
+        Published by Roushan Research International (RRI)
+        · Research Convenor & Principal Author:
+        Manish Roushan
+      </p>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <p>
+      © 2030 <strong>Roushan Research International</strong>.
+      All rights reserved.
+    </p>
+
+    <p>
+      Infinity SkillWorks · ISSR-2030
+    </p>
+
+  </footer>
+
+</div>
+
+</body>
+</html>
