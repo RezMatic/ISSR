@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://issr.infinityskillworks.com/sitemap.xml
